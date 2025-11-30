@@ -114,6 +114,97 @@
   color: #0db20d !important;
   font-weight: bold;
 }
+/* ----------------------------- */
+/* RESPONSIVE DESIGN (MOBILE)    */
+/* ----------------------------- */
+
+/* Tablets y móviles (pantallas < 992px) */
+@media (max-width: 992px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .blue-header {
+    height: 90px;
+    font-size: 1.6rem;
+  }
+
+  table, th, td {
+    font-size: 0.95rem;
+  }
+}
+
+/* Móviles medianos (pantallas < 768px) */
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tabs button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .blue-header {
+    height: 80px;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  table, th, td {
+    font-size: 0.9rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Móviles pequeños (pantallas < 480px) */
+@media (max-width: 480px) {
+
+  body {
+    font-size: 0.95rem;
+  }
+
+  .tabs button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .blue-header {
+    height: 70px;
+    font-size: 1.2rem;
+  }
+
+  table, th, td {
+    font-size: 0.85rem;
+  }
+
+  .question {
+    padding: 12px;
+  }
+
+  .btn-top {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 12px;
+    font-size: 18px;
+  }
+}
+
 
 
 
