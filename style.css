@@ -1,0 +1,124 @@
+ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;margin:0;padding:0;background:#ffffff;color:#111}
+    .tabs{display:flex;border-bottom:1px solid #ddd;background:#fff}
+    .tabs button{flex:1;padding:14px 16px;border:0;background:transparent;cursor:pointer;font-weight:600}
+    .tabs button.active{background:#e2e8f0}
+    .container{padding:20px}
+    .hidden{display:none}
+    .small{font-size:0.85em;color:#555}
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    table,th,td{border:1px solid #ccc}
+    th,td{padding:8px;text-align:left}
+    pre{white-space:pre-wrap;font-family:inherit}
+    .image-placeholder{border:1px dashed #bbb;padding:18px;text-align:center;margin:12px 0;color:#666}
+	body, p, li, .container {
+  text-align: justify;
+}
+.question.correct {
+    border: 2px solid #28a745;
+    background-color: #d4edda;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.question.incorrect {
+    border: 2px solid #dc3545;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 8px;
+}
+#tab3, #tab3 p, #tab3 li, #tab3 ul {
+  text-align: left;
+}
+.container {
+  padding-left: 85px; 
+  padding-right: 95px;
+}
+.blue-header {
+  background-color: #003a6c; 
+  height: 120px;             
+  color: white;              
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  font-size: 2rem;           
+  font-weight: bold;
+}
+.btn-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0a6cff;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: opacity 0.3s;
+}
+
+.btn-top:hover {
+  background-color: #004bb5;
+}
+/* --- ANIMACIONES GENERALES --- */
+.fade {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Botones animados */
+.tabs button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tabs button:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo para pestañas ocultas animables */
+.hidden {
+  display: none;
+}
+
+/* Animación al cambiar de pestaña */
+.tab-active {
+  display: block;
+}/* Contenedor de cada pregunta */
+.question {
+  margin-bottom: 25px;       /* separa cada pregunta */
+  padding: 15px;
+  border: 1px solid #ccc;    /* un borde suave para orden visual */
+  border-radius: 8px;
+  background: #f9f9f9;       /* fondo clarito */
+}
+
+/* Espaciado entre las alternativas */
+.question label {
+  display: block;
+  margin: 1px 0;
+}
+
+/* Mejor separación del texto de la pregunta */
+.question p {
+  margin-bottom: 10px;
+}
+.correct-answer {
+  color: #0db20d !important;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
