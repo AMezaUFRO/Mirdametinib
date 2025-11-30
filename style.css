@@ -204,6 +204,47 @@
     font-size: 18px;
   }
 }
+/* ----------------------------- */
+/* FIX: LOGO Y TABLAS EN MÓVIL   */
+/* ----------------------------- */
+
+/* Evita que las tablas empujen el contenido */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;  /* fuerza tamaño uniforme */
+}
+
+td, th {
+  word-wrap: break-word; /* permite cortar palabras largas */
+}
+
+/* Contenedor scroll solo en móviles (evita desbordamientos) */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: normal;
+  }
+}
+
+/* LOGO más grande en móvil */
+@media (max-width: 768px) {
+  img {
+    max-width: 60% !important;   /* aumenta tamaño en móvil */
+    height: auto;
+    display: block;
+    margin: 0 auto;              /* centrado */
+  }
+}
+
+/* LOGO aún más grande para móviles muy pequeños */
+@media (max-width: 480px) {
+  img {
+    max-width: 80% !important;
+  }
+}
+
 
 
 
